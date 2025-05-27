@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+/* body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ .green-snackbar {
+  margin-top: 4rem !important;
+  background-color: #70b073d9 !important; 
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  transition: all 0.3s ease-in-out;
+}
+
+.black-snackbar {
+  margin-top: 4rem !important;
+  background-color: #f44336 !important; 
+  color: #fff;
+  font-weight: 500;
+  padding: 14px 24px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
+    color: var(--mdc-snackbar-supporting-text-color, var(--mat-sys-inverse-on-surface));
+    border-radius: var(--mdc-snackbar-container-shape, var(--mat-sys-corner-extra-small));
+    /* background-color: var(--mdc-snackbar-container-color, var(--mat-sys-inverse-surface)); */
+  background-color: #70b073d9 !important; 
+}
+
+
+.snackbar-with-image {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.snackbar-icon {
+  width: 20px;
+  height: 20px;
+}

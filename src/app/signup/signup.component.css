@@ -1,0 +1,60 @@
+/* .mat-toolbar{
+    margin: -24px;
+    width: auto;
+    margin-bottom: 10px;
+} */
+/* mat-form-field{
+    padding: 5px;
+} */
+
+mat-hint{
+    color:red;
+}
+.signup-toolbar {
+  background-color: #181e21; 
+  /* background-color: #013b56; */
+  color: white;
+}
+
+.toolbar-row {
+  display: flex;
+  align-items: center;
+  /* padding: 0 16px; */
+}
+
+/* .toolbar-title {
+  font-size: 20px;
+  font-weight: 500;
+} */
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+button[mat-icon-button] {
+  color: rgb(255, 255, 255);}
+
+.mat-mdc-form-field {
+    /* --mat-mdc-form-field-floating-label-scale: 0.75; */
+   min-width: 100%;
+
+    flex-direction: column;
+    min-width: 100%;
+    text-align: left;
+  
+    /* -webkit-font-smoothing: antialiased;
+    font-family: var(--mat-form-field-container-text-font, var(--mat-sys-body-large-font));
+    line-height: var(--mat-form-field-container-text-line-height, var(--mat-sys-body-large-line-height));
+    font-size: var(--mat-form-field-container-text-size, var(--mat-sys-body-large-size));
+    letter-spacing: var(--mat-form-field-container-text-tracking, var(--mat-sys-body-large-tracking));
+    font-weight: var(--mat-form-field-container-text-weight, var(--mat-sys-body-large-weight)); */
+
+}
+/* .mat-mdc-dialog-content {
+    display: block;
+    flex-grow: 1;
+    box-sizing: border-box;
+    margin: 0;
+    overflow: auto;
+    /* max-height: 65vh; */
+/* #013b56 */

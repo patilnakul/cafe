@@ -1,0 +1,24 @@
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+<div class="hero-section">
+  <div class="overlay">
+    <div class="slider-container">
+      <div class="slider-track" [style.transform]="getTransform()">
+        <div class="slide" *ngFor="let slide of slides">
+          <h2>{{ slide.title }}</h2>
+          <p>{{ slide.description }}</p>
+          <button mat-raised-button color="primary">
+            <mat-icon>{{slide.icon}}</mat-icon>{{ slide.buttonText }}</button>
+        </div>
+      </div>
+      <div class="dots">
+        <span
+          class="dot "
+          *ngFor="let dot of slides; let i = index"
+          [class.active]="i === currentIndex"
+          (click)="goToSlide(i)"
+        ></span>
+      </div>
+    </div>
+  </div>
+</div>
