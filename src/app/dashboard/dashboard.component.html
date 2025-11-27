@@ -1,0 +1,73 @@
+<!-- dashboard.component.html -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<mat-card class="mat-elevation-z4 dashboard-header">
+    <div class="dashboard-title">
+        <mat-icon class="dashboard-icon">speed</mat-icon>
+        <span>Dashboard</span>
+    </div>
+</mat-card>
+<br />
+
+<div class="card-container">
+
+    <!-- Category Card -->
+    <div class="card">
+        <div class="heading-box">
+            <mat-icon style="color: #ffb836;">restaurant_menu</mat-icon>
+            <span>Category</span>
+        </div>
+        <div class="card-description">
+            <ul class="responsive-list styled-feature-list">
+                <li> Categories help organize food products into logical groups.</li>
+                <li>Easily manage and browse items by their type or cuisine.</li>
+            </ul>
+        </div>
+        <div class="card-overlay">
+            <div class="card-title">Total Category:</div>
+            <span class="mt-3" style="font-size: 1.5rem;font-weight: 600; ">{{data?.category}}</span>
+            <button mat-raised-button class=" mt-4" [routerLink]="['/cafe/category']">View Category</button>
+        </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="card">
+        <div class="heading-box">
+            <mat-icon style="color: #ffb836;">fastfood</mat-icon>
+            <span>Product</span>
+        </div>
+        <div class="card-description">
+
+            <ul class="responsive-list styled-feature-list">
+                <li> Products represent individual food items available for customers.</li>
+                <li>Each product includes details like name, price, and category.</li>
+            </ul>
+
+        </div>
+        <div class="card-overlay">
+            <div class="card-title">Total Product:</div>
+            <span class="mt-3" style="font-size: 1.5rem;font-weight: 600; ">{{data?.product}}</span>
+            <button mat-raised-button class=" mt-4" [routerLink]="['/cafe/product']">View Product</button>
+        </div>
+    </div>
+
+    <!-- Bill Card -->
+    <div class="card">
+        <div class="heading-box">
+            <mat-icon style="color: #ffb836;">receipt_long</mat-icon>
+            <span>Bill</span>
+        </div>
+        <div class="card-description">
+            <ul class="responsive-list styled-feature-list">
+                <li> Bills record customer orders and completed transactions.</li>
+                <li>Each bill includes product details, quantity, and total amount.</li>
+            </ul>
+        </div>
+        <div class="card-overlay">
+            <div class="card-title">Total Bill:</div>
+            <span class="mt-3" style="font-size: 1.5rem;font-weight: 600; ">{{data?.bill}}</span>
+            <button mat-raised-button class=" mt-4" [routerLink]="['/cafe/bill']">View Bill</button>
+        </div>
+    </div>
+
+</div>

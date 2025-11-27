@@ -10,13 +10,13 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
- .green-snackbar {
+ /* .green-snackbar {
   margin-top: 4rem !important;
   background-color: #70b073d9 !important; 
   color: #fff;
   font-weight: 500;
   border-radius: 6px;
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
 }
 
@@ -29,23 +29,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .mat-mdc-snack-bar-container .mat-mdc-snackbar-surface {
-    color: var(--mdc-snackbar-supporting-text-color, var(--mat-sys-inverse-on-surface));
+    margin-top: 3.5rem !important;
+
+    color: white;
     border-radius: var(--mdc-snackbar-container-shape, var(--mat-sys-corner-extra-small));
     /* background-color: var(--mdc-snackbar-container-color, var(--mat-sys-inverse-surface)); */
-  background-color: #70b073d9 !important; 
+  /* background-color: #70b073d9 !important;  */
 }
 
-
-.snackbar-with-image {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.snackbar-icon {
-  width: 20px;
-  height: 20px;
-}

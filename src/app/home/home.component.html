@@ -10,14 +10,17 @@
     </a>
     <ul>
       <li>
-        <a (click)="handleSignupAction()">Signup</a>
+        <a (click)="handleLoginAction()" style="color: white;"><mat-icon>login</mat-icon>&nbsp;Login</a>
       </li>
       <li>
-        <a (click)="handleForgotPasswordAction()">Forgot Password ?</a>
+        <a (click)="handleSignupAction()" style="color: white;"><mat-icon>app_registration</mat-icon> Signup</a>
+      </li>
+      <li>
+        <a (click)="handleForgotPasswordAction()" style="color: white;">Forgot Password ?</a>
       </li>
     </ul>
   </nav>
 </div>
-<div class="footer" id="signup">
-  <h3>All right reserved &#64;NakulPatil</h3>
-</div>
+
+
+<app-footer></app-footer>

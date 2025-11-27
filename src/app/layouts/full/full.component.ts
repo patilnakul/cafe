@@ -5,6 +5,13 @@ import { MaterialModule } from '../../shared/material-module';
 import { AppHeaderComponent } from './header/header.component'; // Adjust the path as needed
 import { AppSidebarComponent } from './sidebar/sidebar.component';
 import { RouterOutlet } from '@angular/router';
+import { DashboardService } from '../../services/dashboard.service';
+import { AuthService } from '../../services/auth.service';
+import { UserService } from '../../services/user.service';
+import { TokenInterceptor } from '../../services/token-interceptor.interceptor';
+import { HttpClientModule } from '@angular/common/http';
+import { SnackbarService } from '../../services/snackbar.service';
+import { RouteGuardService } from '../../services/route-guard.service';
 
 
 
@@ -18,7 +25,8 @@ import { RouterOutlet } from '@angular/router';
     AppSidebarComponent,
     RouterOutlet
   ],
-  styleUrls: []
+  styleUrls: [],
+  providers:[DashboardService,AuthService,UserService,TokenInterceptor,HttpClientModule,SnackbarService,RouteGuardService]
 })
 export class FullComponent implements OnDestroy, AfterViewInit {
   mobileQuery: MediaQueryList;

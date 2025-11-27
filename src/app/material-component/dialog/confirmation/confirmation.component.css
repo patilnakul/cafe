@@ -1,0 +1,9 @@
+/* === Toolbar Styling === */
+.signup-toolbar {
+  background-color: #181e21;
+  color: white;
+  padding: 0 16px;
+}
+.spacer {
+  flex: 1 1 auto;
+}

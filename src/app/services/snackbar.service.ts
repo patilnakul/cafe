@@ -13,7 +13,7 @@ export class SnackbarService {
   openSnackBar(message: string, type: 'success' | 'error' = 'success') {
     const icon = type === 'error' ? '❌' : '✅'; 
 
-    const panelClass = type === 'error' ? 'black-snackbar' : 'green-snackbar';
+    const panelClass = type === 'error' ? 'red-snackbar' : 'green-snackbar';
 
     this.snackBar.open(`${icon} ${message}`, '', {
       horizontalPosition: 'end',

@@ -36,6 +36,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ViewBillProductsComponent } from './dialog/view-bill-products/view-bill-products.component';
+import { ConfirmationComponent } from './dialog/confirmation/confirmation.component';
 
 @NgModule({
   declarations: [],
@@ -76,6 +78,11 @@ import { MatDialogModule } from '@angular/material/dialog';
     
 
   // ],
+  imports:[
+    ViewBillProductsComponent,
+    ConfirmationComponent,
+  
+  ],
   exports: [
     MatButtonModule,
     MatInputModule,
@@ -112,6 +119,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonModule,
     MatDialogModule,
     // Add other Material modules here
+    ViewBillProductsComponent
   ]
 })
 export class MaterialComponentModule { }
